@@ -146,7 +146,7 @@
     display: flex;
 }
 .observed .avatar img {
-    border-radius:50%;
+    /* border-radius:50%; */
 }
 .observed .stats_row .health_armor_container {
     display: flex;

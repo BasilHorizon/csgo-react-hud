@@ -10,10 +10,10 @@ body,
 
 body {
   margin: 0;
-  font-family: 'Stratum2', 'Montserrat', 'Roboto', sans-serif;
+  font-family: 'Supermolot', 'Stratum2', 'Montserrat', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/bg.png');/**/
+  /*background-image: url('./assets/bg.png');/**/
   background-size: 100% auto;
 }
 
@@ -48,8 +48,8 @@ code {
   --dev-purple: rgba(200, 0, 255, 1);
   --color-t: #8c040d;
   --color-ct: #041e42;
-  --color-new-t: #8c040d;
-  --color-new-ct: #041e42;
+  --color-new-t: #ff2546;
+  --color-new-ct: #d2ffff;
   --color-bomb: #f22222;
   --color-defuse: #2222f2;
 }

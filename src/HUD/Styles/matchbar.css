@@ -130,7 +130,7 @@
     background-color: var(--sub-panel-color);
 }
 
-#matchbar .round-thingy {
+/* #matchbar .round-thingy {
     width: 60px;
     height: 60px;
     position: absolute;
@@ -163,7 +163,7 @@
 }
 #matchbar .team.left .round-thingy {
     left: -30px;
-}
+} */
 
 #matchbar .team .logo {
     display: flex;
@@ -243,7 +243,7 @@
     justify-content: center;
     background-color: white;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: Supermolot;
     font-weight:600;
 }
 .win_text.show {

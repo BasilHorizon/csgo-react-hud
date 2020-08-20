@@ -49,7 +49,7 @@ opacity:0.2;
 position: absolute;
 right: 0;
 height: 50%;
-background-color: #ffd700;
+background-color: var(--color-moneys);
 width: 1px;
 }
 .bracket:first-child > .connector {
@@ -68,7 +68,7 @@ border-bottom: 1px solid transparent;
 width: 100%;
 position: absolute;
 height: 1px;
-background: #ffd700;
+background: var(--color-moneys);
 }
 .match-connector.last-match {
 width: 220px;
@@ -133,5 +133,5 @@ height: 20px;
     padding-left: 22px;
 }
 .match-details.current {
-    border: 1px solid gold;
+    border: 1px solid var(--color-moneys);
 }

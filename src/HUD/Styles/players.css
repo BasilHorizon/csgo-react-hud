@@ -52,7 +52,7 @@
     height: 100%;
 }
 .teambox .player:last-child .player_data {
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 20px 20px; */
 }
 
 .teambox.right .player .player_data {
@@ -79,7 +79,8 @@
 
 .teambox .player .player_data .avatar {
     width: 70px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: flex-end;
 }
@@ -92,7 +93,7 @@
 }
 
 .teambox .player .player_data .avatar img {
-    border-radius:50%;
+    /* border-radius:50%; */
 }
 
 .teambox .player .player_data .player_stats {
@@ -283,7 +284,7 @@
 }
 
 .teambox .player .hp_bar {
-    height: 2px;
+    height: 24px;
 }
 .teambox.right .player .hp_bar {
     align-self: flex-end;
