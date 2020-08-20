@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Supermolot';
-    src: url('Supermolot-Light.woff2') format('woff2'),
-        url('Supermolot-Light.woff') format('woff');
+    src: url('./supermolot/Supermolot-Light.woff2') format('woff2'),
+        url('./supermolot/Supermolot-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Supermolot';
-    src: url('Supermolot-Thin.woff2') format('woff2'),
-        url('Supermolot-Thin.woff') format('woff');
+    src: url('./supermolot/Supermolot-Thin.woff2') format('woff2'),
+        url('./supermolot/Supermolot-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Supermolot';
-    src: url('Supermolot.woff2') format('woff2'),
-        url('Supermolot.woff') format('woff');
+    src: url('./supermolot/Supermolot.woff2') format('woff2'),
+        url('./supermolot/Supermolot.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Supermolot';
-    src: url('Supermolot-Bold.woff2') format('woff2'),
-        url('Supermolot-Bold.woff') format('woff');
+    src: url('./supermolot/Supermolot-Bold.woff2') format('woff2'),
+        url('./supermolot/Supermolot-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
