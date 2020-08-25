@@ -59,6 +59,9 @@ export default class Observed extends React.Component<{ player: Player | null }>
 						])}
 						</div>
 				</div>
+				<div className="row">
+					<div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}></div>
+				</div>
 				<div className="stats_row">
 					<div className="health_armor_container">
 						<div className="health-icon icon"><img src={player.team.side === "CT" ? HealthFullCT : HealthFullT} alt={'Health'}/></div>

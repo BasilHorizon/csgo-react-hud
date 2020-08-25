@@ -37,16 +37,17 @@ export default class PlayerBox extends React.Component<IProps> {
           </div>
           <div className="player_stats">
             <div className="row">
-              <div className="health">
-                {player.state.health}
-              </div>
               <div className="username">
                 <div>{isLeft ? <span>{player.observer_slot}</span> : null} {player.name} {!isLeft ? <span>{player.observer_slot}</span> : null}</div>
                 {primary || secondary ? <Weapon weapon={primary ? primary.name : secondary.name} active={primary ? primary.state === "active" : secondary.state === "active"} /> : ""}
                 {player.state.round_kills ? <div className="roundkills-container">{player.state.round_kills}</div> : null}
               </div>
             </div>
-            <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}></div>
+            <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}>
+              <div className="health">
+              {player.state.health}%
+              </div>
+            </div>
             <div className="row">
               <div className="armor_and_utility">
                 <Bomb player={player} />
