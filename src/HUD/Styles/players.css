@@ -154,7 +154,7 @@
     width: 60px;
     display: none;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: 300;
     color: white;
     opacity: 0.75;
     top: 10%;
@@ -196,7 +196,7 @@
     justify-content: center;
     z-index: 1;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     font-size:18px;
 }
 
@@ -211,7 +211,7 @@
     align-items: center;
     z-index: 1;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     max-width: calc(100% - 49px);
     justify-content: space-between;
     overflow: hidden;

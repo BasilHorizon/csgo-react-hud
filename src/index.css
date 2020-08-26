@@ -39,7 +39,7 @@ code {
 
 :root {
   --main-panel-color: rgba(2, 25, 36, 0.6);
-  --sub-panel-color: rgba(25, 25, 36, 0.8);
+  --sub-panel-color: rgba(0, 14, 33, 0.77);
   --white-dull: rgba(10, 5, 5, 0.25);
   --white-full: rgba(250, 250, 250, 1);
   --white-half: rgba(250, 250, 250, 0.5);

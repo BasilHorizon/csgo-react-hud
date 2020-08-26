@@ -127,7 +127,7 @@
 }
 
 .observed .main_row {
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .observed .main_row .flag {
@@ -172,7 +172,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 21px;
     height: 100%;
     padding-top: 2px;
@@ -189,7 +189,7 @@
 
 .observed .stats_row .statistics .stat {
     display: flex;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 18px;
     margin-right: 24px;
 }
@@ -230,7 +230,7 @@
     flex: 1;
     display: flex;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 300;
 }
 .observed .stats_row .ammo .ammo_counter > div {
     width: 32px;
