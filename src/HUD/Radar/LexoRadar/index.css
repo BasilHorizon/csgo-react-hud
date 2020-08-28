@@ -150,10 +150,11 @@ html, body, .map-container {
 
 .map .player .label {
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 50%;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-size: 27px;
+    font-size: 28px;
+    text-shadow: 0 0 3px var(--sub-panel-color);
 }
 .map .bomb .background {
     background-image: url('./grenades/bomb.png');
@@ -172,13 +173,17 @@ html, body, .map-container {
     animation: BombDefused 2s 1 forwards;
 }
 .map .player.CT .label {
-    background: radial-gradient(rgb(61, 141, 224), rgb(42, 49, 119));
+    background: radial-gradient( var(--color-new-ct), var(--color-new-ct));
 }
 .map .player.T .label {
-    background: radial-gradient(rgb(255, 129, 0), var(--color-new-t));
+    background: radial-gradient( var(--color-new-t), var(--color-new-t));
+}
+.map .player.T.hasBomb {
+    box-shadow: 0 0 12px 1px red;
+    border-radius: 50%;
 }
 .map .player.T.hasBomb .label {
-    background: red;
+    /*background: radial-gradient( red, red);*/
 }
 
 .map .hidden {
