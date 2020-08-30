@@ -316,10 +316,12 @@
 }
 
 .teambox .player .hp_bar.low {
-    background-color: red;
+    background-color: #ba0000;
 }
 
-
+.hp_bar .health {
+    color: #ffffff;
+}
 
 
 
