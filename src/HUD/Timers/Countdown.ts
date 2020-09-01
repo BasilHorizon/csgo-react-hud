@@ -29,7 +29,7 @@ export default class Countdown {
     }
 
     go(duration: string | number){
-        //console.log("STARTED WITH ", duration);
+        console.log("STARTED WITH ", duration);
         if(typeof duration === "string") duration = Number(duration);
         if(Math.abs(duration - this.time) > 2) this.time = duration;
         this.on = true;
