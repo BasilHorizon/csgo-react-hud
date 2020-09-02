@@ -9,6 +9,8 @@ body,
 }
 
 body {
+  width: 1920px;
+  height: 1280px;
   margin: 0;
   font-family: 'Supermolot', 'Stratum2', 'Montserrat', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;

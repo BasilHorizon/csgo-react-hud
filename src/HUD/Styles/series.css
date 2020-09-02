@@ -4,8 +4,8 @@
     flex-direction: row;
     position: fixed;
     justify-content: center;
-    top: 80px;
-    width: 1148px;
+    top: 70px;
+    width: 1132px;
     height: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -77,8 +77,6 @@
     width: 400px;
     height: 30px;
     z-index: 1;
-    padding-left:6px;
-    padding-right:6px;
     top: -30px;
     transition: top 0.5s;
 }
