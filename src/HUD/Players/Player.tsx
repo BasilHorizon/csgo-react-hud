@@ -11,6 +11,8 @@ interface IProps {
   isObserved: boolean,
   isFreezetime: boolean,
 }
+
+
 export default class PlayerBox extends React.Component<IProps> {
   render() {
     const { player } = this.props;
@@ -39,22 +41,28 @@ export default class PlayerBox extends React.Component<IProps> {
             <div className="row">
               <div className="username">
                 <div>{isLeft ? <span>{player.observer_slot}</span> : null} {player.name} {!isLeft ? <span>{player.observer_slot}</span> : null}</div>
-                {primary || secondary ? <Weapon weapon={primary ? primary.name : secondary.name} active={primary ? primary.state === "active" : secondary.state === "active"} /> : ""}
+                
+              <div className="money">${player.state.money}</div>
                 {player.state.round_kills ? <div className="roundkills-container">{player.state.round_kills}</div> : null}
               </div>
             </div>
-            <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}>
-              <div className="health">
-              {player.state.health}%
+            {player.state.health === 0 ? (
+              ''
+            ) : (
+            <div className="row">
+              <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}>
+                <div className="health">
+                  {player.state.health}%
+                </div>
               </div>
             </div>
+            )}
             <div className="row">
               <div className="armor_and_utility">
                 <Bomb player={player} />
                 <Armor player={player} />
                 <Defuse player={player} />
               </div>
-              <div className="money">${player.state.money}</div>
               <div className="grenades">
                 {grenades.map(grenade => (
                   [
@@ -64,6 +72,7 @@ export default class PlayerBox extends React.Component<IProps> {
                 ))}
               </div>
               <div className="secondary_weapon">{primary && secondary ? <Weapon weapon={secondary.name} active={secondary.state === "active"} /> : ""}</div>
+              {primary || secondary ? <Weapon weapon={primary ? primary.name : secondary.name} active={primary ? primary.state === "active" : secondary.state === "active"} /> : ""}
             </div>
             <div className="active_border"></div>
           </div>

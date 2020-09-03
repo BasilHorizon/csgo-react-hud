@@ -41,12 +41,12 @@
 .teambox.right .player {
     flex-direction: row-reverse;
 }
-.tambox .player.active {
+.tambox .player.active .player_data {
     box-shadow: 0 0 9px 3px #c4d600;
 }
 .teambox .player .player_data {
     background-color: var(--sub-panel-color);
-    background: linear-gradient(to bottom, rgba(30,30,30,0.6) 0%,rgba(4,30,66,0.8) 50%,rgba(30,30,30,0.6) 100%);
+    background: linear-gradient(to top,rgba(4,30,66,0.6) 0%,rgba(30,30,30,0.8) 100%);
 
     width: 400px;
     display: flex;
@@ -152,8 +152,8 @@
     flex-direction: row-reverse;
 }
 .teambox .player.dead .player_data {
-    background: linear-gradient(to bottom, rgba(30,30,30,0.6) 0%,rgba(30,30,30,0.6) 100%);
-    width: 360px;
+    background: linear-gradient(to bottom, rgba(30,30,30,0.4) 0%,rgba(30,30,30,0.4) 100%);
+    width: 200px;
 
 }
 .teambox .player .dead-stats {
@@ -164,7 +164,7 @@
     flex-direction: column;
     font-weight: 300;
     color: white;
-    opacity: 0.75;
+    opacity: 0.90;
     top: 10%;
 }
 
@@ -229,8 +229,15 @@
 }
 
 .teambox .player .row .username div span {
-    opacity: 0.6;
-    font-size:15px;
+    opacity: 0.8;
+    font-size:16px;
+    padding: 0 15px;
+}
+.teambox.left .player .row .username div span {
+    border-right: 1px solid rgba(255,255,255,0.6);
+}
+.teambox.right .player .row .username div span {
+    border-left: 1px solid rgba(255,255,255,0.6);
 }
 
 .teambox .player.dead .row .username {
@@ -264,20 +271,20 @@
 }
 
 .teambox .player .row .money {
-    width: 60px;
     color: var(--color-moneys);
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 .teambox.left .player .row .money {
-    margin-right: auto;
+    margin-right: 6px;
 }
 
 .teambox.right .player .row .money {
-    margin-left: auto;
+    margin-left: 6px;
 }
 
 .teambox.right .player .row .money {
@@ -285,7 +292,7 @@
 }
 
 .teambox .player.dead .row .money {
-    color: #466722;
+    color: #c4d600;
 }
 .teambox .player.dead {
     opacity: 0.7;
@@ -354,11 +361,13 @@
     max-height: 30px;
     width: auto;
 }
-.player .username img.weapon {
+.player img.weapon {
     max-height: 30px;
     width: auto;
     margin-left: 5px;
     margin-right: 5px;
+    height: 100%;
+    width: auto;
 }
 
 img.weapon {
