@@ -51,13 +51,13 @@ export default class Observed extends React.Component<{ player: Player | null }>
 						<div className="username">{player.name}</div>
 						<div className="real_name">{player.realName}</div>
 					</div>
-					<div className="flag">{countryName ? <img src={`${apiUrl}files/img/flags/${countryName.replace(/ /g, "-")}.png`} alt={countryName}/> : ''}</div>
+					{/* <div className="flag">{countryName ? <img src={`${apiUrl}files/img/flags/${countryName.replace(/ /g, "-")}.png`} alt={countryName}/> : ''}</div> */}
 					<div className="grenade_container">
 						{grenades.map(grenade => [
 							<Weapon weapon={grenade.name} active={grenade.state === "active"} isGrenade />,
 							grenade.ammo_reserve === 2 ? <Weapon weapon={grenade.name} active={grenade.state === "active"} isGrenade /> : null
 						])}
-						</div>
+					</div>
 				</div>
 				<div className="row">
 					<div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}></div>

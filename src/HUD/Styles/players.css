@@ -31,8 +31,8 @@
 }
 
 .teambox .player {
-    width: 645px;
-    height: 70px;
+    width: 620px;
+    height: 77px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,14 +41,19 @@
 .teambox.right .player {
     flex-direction: row-reverse;
 }
-
+.tambox .player.active {
+    box-shadow: 0 0 9px 3px #c4d600;
+}
 .teambox .player .player_data {
     background-color: var(--sub-panel-color);
-    width: 415px;
+    background: linear-gradient(to bottom, rgba(30,30,30,0.6) 0%,rgba(4,30,66,0.8) 50%,rgba(30,30,30,0.6) 100%);
+
+    width: 400px;
     display: flex;
     flex-direction: row;
     position: relative;
     height: 100%;
+    transition: .3s ease-in-out;
 }
 .teambox .player:last-child .player_data {
     /* border-radius: 0 0 20px 20px; */
@@ -146,7 +151,11 @@
 .teambox.right .player .row .username {
     flex-direction: row-reverse;
 }
+.teambox .player.dead .player_data {
+    background: linear-gradient(to bottom, rgba(30,30,30,0.6) 0%,rgba(30,30,30,0.6) 100%);
+    width: 360px;
 
+}
 .teambox .player .dead-stats {
     position: absolute;
     height: 85%;
@@ -211,7 +220,7 @@
     z-index: 1;
     color: white;
     font-weight: 300;
-    max-width: calc(100% - 49px);
+    max-width: 100%;
     justify-content: space-between;
     overflow: hidden;
     font-size: 18px;
