@@ -1,7 +1,7 @@
 
 .boxes {
     position: fixed;
-    bottom: 384px;
+    bottom: 420px;
 }
 
 .boxes.left {
@@ -22,7 +22,7 @@
 }
 
 .sidebox, .utilitybox, .moneybox {
-    width: 415px;
+    width: 400px;
     height: 70px;
     display: flex;
     flex-direction: row;

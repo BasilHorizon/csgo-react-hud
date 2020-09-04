@@ -1,5 +1,6 @@
 import React from "react";
-
+//import Lottie from 'react-lottie';
+import * as animationData from './c4_anim.json'
 import { Timer } from "../MatchBar/MatchBar";
 import { Player } from "csgogsi";
 import * as I from "./../../assets/Icons";
@@ -8,6 +9,38 @@ interface IProps {
   timer: Timer | null;
   side: "right" | "left"
 }
+
+// export default class LottieControl extends React.Component {
+
+//   constructor(props) {
+//     super(props);
+//     this.state = {isStopped: false, isPaused: false};
+//   }
+
+//   render() {
+//     const buttonStyle = {
+//       display: 'block',
+//       margin: '10px auto'
+//     };
+
+//     const defaultOptions = {
+//       loop: true,
+//       autoplay: true, 
+//       animationData: animationData,
+//       rendererSettings: {
+//         preserveAspectRatio: 'xMidYMid slice'
+//       }
+//     };
+
+//     return <div>
+//       <Lottie options={defaultOptions}
+//               height={1080}
+//               width={1920}
+//               isStopped={this.state.isStopped}
+//               isPaused={this.state.isPaused}/>
+//     </div>
+//   }
+// }
 
 export default class Bomb extends React.Component<IProps> {
   getCaption = (type: "defusing" | "planting", player: Player | null) => {

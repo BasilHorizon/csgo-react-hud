@@ -47,10 +47,9 @@
 }
 .map_series_container .title_bar {
     display: flex;
-    background-color: rgba(0,0,0,0.64);
+    background-color: var(--sub-panel-color);
     height:25px;
     color: white;
-    border-radius: 6px 6px 0 0;
     font-family: Supermolot;
     font-size: 13px;
     font-weight:300;

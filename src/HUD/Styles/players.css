@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     opacity: 1;
-    transition: opacity 0.75s;
+    transition: opacity 0.3s;
 }
 
 .teambox.hide {
@@ -23,11 +23,11 @@
 
 
 .teambox.left {
-    left: 0;
+    left: 10px;
 }
 
 .teambox.right {
-    right: 0;
+    right: 10px;
 }
 
 .teambox .player {
@@ -36,17 +36,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 4px;
+    overflow: hidden;
 }
-
 .teambox.right .player {
     flex-direction: row-reverse;
 }
-.tambox .player.active .player_data {
-    box-shadow: 0 0 9px 3px #c4d600;
-}
 .teambox .player .player_data {
     background-color: var(--sub-panel-color);
-    background: linear-gradient(to top,rgba(4,30,66,0.6) 0%,rgba(30,30,30,0.8) 100%);
+    background: linear-gradient(to top,rgba(4,30,66,0.6) 0%,var(--sub-panel-color) 100%);
 
     width: 400px;
     display: flex;
@@ -54,6 +52,9 @@
     position: relative;
     height: 100%;
     transition: .3s ease-in-out;
+}
+.teambox .player.active .player_data {
+    background: linear-gradient(to top,rgba(4,30,66,1) 0%,var(--sub-panel-color) 100%);
 }
 .teambox .player:last-child .player_data {
     /* border-radius: 0 0 20px 20px; */
@@ -107,7 +108,22 @@
     min-width: 0;
 }
 .teambox .player.active .player_data {
-    border: 2px solid white;
+    box-shadow: 0 0 24px 9px #c4d600;
+}
+.teambox .player.active .player_data:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    bottom: 0;
+    background: #c4d600;
+}
+.teambox.left .player.active .player_data:before {
+    left: 0;
+}
+.teambox.right .player.active .player_data:before {
+    right: 0;
 }
 /*
 .teambox .player.active .player_data .active_border {
@@ -138,6 +154,7 @@
     flex: 1;
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .teambox.left .player .row {
@@ -153,19 +170,19 @@
 }
 .teambox .player.dead .player_data {
     background: linear-gradient(to bottom, rgba(30,30,30,0.4) 0%,rgba(30,30,30,0.4) 100%);
-    width: 200px;
+    width: 320px;
 
 }
 .teambox .player .dead-stats {
     position: absolute;
-    height: 85%;
+    height: 50%;
     width: 60px;
     display: none;
     flex-direction: column;
     font-weight: 300;
     color: white;
     opacity: 0.90;
-    top: 10%;
+    bottom: 10%;
 }
 
 .teambox .player.dead .dead-stats {
@@ -205,9 +222,12 @@
     z-index: 1;
     color: white;
     font-weight: 300;
-    font-size:18px;
+    font-size:16px;
+    line-height: 18px;
 }
-
+.teambox.right .player .row .health {
+    text-align: right;
+}
 .teambox .player.dead .row .health {
     color: #b2b2b2;
     overflow: hidden;
@@ -223,15 +243,17 @@
     max-width: 100%;
     justify-content: space-between;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 2px 2px;
 }
 
 .teambox .player .row .username div span {
     opacity: 0.8;
     font-size:16px;
-    padding: 0 15px;
+    padding: 0 8px;
+    margin: 0 6px;
 }
 .teambox.left .player .row .username div span {
     border-right: 1px solid rgba(255,255,255,0.6);
@@ -295,11 +317,11 @@
     color: #c4d600;
 }
 .teambox .player.dead {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .teambox .player .hp_bar {
-    height: 24px;
+    height: 18px;
 }
 .teambox.right .player .hp_bar {
     align-self: flex-end;
@@ -362,12 +384,13 @@
     width: auto;
 }
 .player img.weapon {
-    max-height: 30px;
+    max-height: 28px;
     width: auto;
     margin-left: 5px;
     margin-right: 5px;
     height: 100%;
     width: auto;
+    align-self: right;
 }
 
 img.weapon {
@@ -380,16 +403,18 @@ img.weapon.active {
     position: absolute;
     background-image: url('./../../assets/images/icon_skull_default.png');
     background-repeat: no-repeat;
-    background-size: 10px;
+    background-size: 16px;
     background-position: left 2px;
-    padding-left: 16px;
-    font-size: 13px;
+    padding-left: 21px;
+    font-size: 16px;
+    top: 6px;
+    text-shadow: 0 0 3px #000;
 }
 .teambox.right .roundkills-container {
-    left: 135px;
+    left: -36px;
 }
 .teambox.left .roundkills-container {
-    right: 135px;
+    right: -36px;
 }
 /*
 img.weapon.active {
@@ -461,7 +486,7 @@ img.weapon.active {
     display: flex;
     flex-direction:column;
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.3s;
     position: relative;
 }
 .player_side_stats .side_stat_row {

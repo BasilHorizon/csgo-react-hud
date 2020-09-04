@@ -1,16 +1,14 @@
 .observed {
     position: fixed;
-    width: 620px;
-    bottom: 120px;
-    margin-left: -310px;
-    left: 50%;
-    height: 86px;
+    bottom: 14px;
+    left: 600px;
+    right: 600px;
+    height: 96px;
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: rgba(0,0,0,0.6);
+    background-color: var(--sub-panel-color);
 }
-
 .observed .main_row,
 .observed .stats_row {
     flex: 1;
@@ -18,7 +16,10 @@
     align-items: center;
     flex-direction: row;
     position: relative;
-    height: 43px;
+    height: 42px;
+}
+.observed .main_row {
+    height: 50px;
 }
 
 .observed .stats_row {
@@ -50,7 +51,9 @@
 }
 
 .observed .main_row .logo {
-    height: 43px;
+    height: 100%;
+    width: auto;
+    padding: 4px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +75,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 24px;
+    font-weight: 400;
 }
-.observed.T {
+/* .observed.T {
     border-bottom: 6px solid var(--color-new-t);
 }
 .observed.CT {
     border-bottom: 6px solid var(--color-new-ct);
-}
+} */
 
 .observed.T .main_row .username_container .username,
 .observed.T .stats_row .ammo .ammo_counter .ammo_reserve {
@@ -96,7 +101,7 @@
 }
 
 .observed .main_row .weapon.grenade {
-    max-height: 28px;
+    max-height: 80%;
     /*filter: invert(1);*/
 }
 
@@ -138,12 +143,16 @@
 }
 
 .observed .main_row .flag img {
-    height: 43px;
+    height: 36px;
 }
 
 .observed .avatar {
     align-self: flex-end;
-    display: flex;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 46px;
 }
 .observed .avatar img {
     /* border-radius:50%; */
@@ -168,14 +177,14 @@
 }
 
 .observed .stats_row .health_armor_container .text {
-    width: 30px;
+    width: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 26px;
+    line-height: 26px;
     height: 100%;
-    padding-top: 2px;
 }
 
 .observed .stats_row .statistics {
@@ -190,7 +199,7 @@
 .observed .stats_row .statistics .stat {
     display: flex;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 26px;
     margin-right: 24px;
 }
 
@@ -217,7 +226,7 @@
 .observed .stats_row .ammo .ammo_icon_container {
     display: flex;
     height: 100%;
-    width: 48px;
+    width: 36px;
     align-items: center;
     justify-content: center;
 }
@@ -229,11 +238,10 @@
 .observed .stats_row .ammo .ammo_counter {
     flex: 1;
     display: flex;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 300;
 }
 .observed .stats_row .ammo .ammo_counter > div {
-    width: 32px;
     display: flex;
     align-items: center;
 }

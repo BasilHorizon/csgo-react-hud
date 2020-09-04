@@ -42,7 +42,7 @@ export default class PlayerBox extends React.Component<IProps> {
               <div className="username">
                 <div>{isLeft ? <span>{player.observer_slot}</span> : null} {player.name} {!isLeft ? <span>{player.observer_slot}</span> : null}</div>
                 
-              <div className="money">${player.state.money}</div>
+              <div className="money">{player.state.money}$</div>
                 {player.state.round_kills ? <div className="roundkills-container">{player.state.round_kills}</div> : null}
               </div>
             </div>

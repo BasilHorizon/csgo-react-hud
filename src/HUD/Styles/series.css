@@ -4,11 +4,10 @@
     flex-direction: row;
     position: fixed;
     justify-content: center;
-    top: 70px;
-    width: 1132px;
+    top: 83px;
     height: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 300px;
+    right: 300px;
     /* background-color: var(--sub-panel-color); */
 }
 
@@ -45,6 +44,7 @@
 }
 
 #series_text {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -54,6 +54,7 @@
     font-size: 12px;
     font-weight: 300;
     color: var(--white-full);
+    top: 16px;
 }
 
 .container {
