@@ -22,7 +22,7 @@
     flex-direction: column;
     position: relative;
     width: 126px;
-    height: 115px;
+    height: 120px;
     background-color: var(--sub-panel-color);
     top: 0;
 }
@@ -174,9 +174,13 @@
 }
 #matchbar .team.left .logo {
     justify-content: flex-end;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--sub-panel-color) 100%);
+
 }
 #matchbar .team.right .logo {
     justify-content: flex-start;
+    background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, var(--sub-panel-color) 100%);
+
 }
 
 #matchbar .team .logo img {
@@ -233,9 +237,9 @@
     display: none;
     opacity:1;
     /*transform: translateX(-50%);*/
-    width: 503px;
+    width: 460px;
     height: 50px;
-    top: 70px;
+    top: 90px;
     align-items:center;
     color: black;
     justify-content: center;
@@ -250,10 +254,10 @@
 	animation-fill-mode: forwards;
 }
 .win_text.right {
-    left: calc(50% + 71px);
+    left: 440px;
 }
 .win_text.left {
-    right: calc(50% + 71px);
+    right: 440px;
 }
 
 
@@ -262,25 +266,25 @@
     display: flex;
     opacity:1;
     /*transform: translateX(-50%);*/
-    width: 503px;
-    height: 49px;
-    top: 70px;
+    width: 460;
+    height: 50px;
+    top: 90px;
     align-items:center;
     color: white;
     justify-content: center;
     background-color: rgba(0,0,0,0.65);
 }
 .defuse_plant_container.right {
-    left: calc(50% + 71px);
+    left: 440px;
 }
 .defuse_plant_container.left {
-    right: calc(50% + 71px);
+    right: 440px;
 }
 .defuse_plant_container.hide {
     opacity: 0;
 }
 .defuse_plant_container .defuse_plant_bar {
-    height: 49px;
+    height: 50px;
     background-color: #3c3c3c;
     position: absolute;
     width: 0%;

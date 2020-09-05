@@ -1,3 +1,15 @@
+.observed .hp_bar {
+    height: 6px;
+    transition: .6s ease-in-out;
+}
+.observed.T .hp_bar {
+    background-color: var(--color-new-t);
+    box-shadow: 0 0 12px 0 var(--color-t);
+}
+.observed.CT .hp_bar {
+    background-color: var(--color-new-ct);
+    box-shadow: 0 0 12px 0 var(--color-ct);
+}
 .observed {
     position: fixed;
     bottom: 14px;
@@ -166,7 +178,7 @@
 
 .observed .stats_row .health_armor_container .icon {
     display: flex;
-    width: 30px;
+    width: 36px;
     align-items: center;
     justify-content: center;
 }
@@ -177,7 +189,7 @@
 }
 
 .observed .stats_row .health_armor_container .text {
-    width: 36px;
+    width: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +244,7 @@
 }
 
 .observed .stats_row .ammo .ammo_icon_container img {
-    max-width: 30px;
+    max-width: 22px;
 }
 
 .observed .stats_row .ammo .ammo_counter {

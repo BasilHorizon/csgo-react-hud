@@ -49,10 +49,11 @@ code {
   --color-moneys: #c4d600;
   --dev-purple: rgba(200, 0, 255, 1);
   --color-t: #8c040d;
-  --color-ct: #041e42;
+  --color-ct: rgb(0 106 255 / 80%);
   --color-new-t: #ff2546;
   --color-new-ct: #59C8F0;
-  --color-bomb: #ff2546;
+  /* --color-new-ct: rgb(0 106 255 / 80%); */
+  --color-bomb: #ba0000;
   --color-defuse: #041e42;
 }
 

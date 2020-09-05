@@ -118,6 +118,7 @@
     height: 100%;
     bottom: 0;
     background: #c4d600;
+    z-index: 2;
 }
 .teambox.left .player.active .player_data:before {
     left: 0;
@@ -224,9 +225,11 @@
     font-weight: 300;
     font-size:16px;
     line-height: 18px;
+    float: left;
 }
 .teambox.right .player .row .health {
     text-align: right;
+    float: right;
 }
 .teambox .player.dead .row .health {
     color: #b2b2b2;
@@ -336,7 +339,7 @@
 }
 
 .teambox .player.dead .row .hp_background_2 {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 .teambox .player .row .hp_background_2 {
@@ -346,10 +349,14 @@
 
 .teambox.CT .player .hp_bar {
     background-color: var(--color-new-ct);
+    box-shadow: 0 0 3px 0 var(--color-ct);
+    text-shadow: 0 0 3px var(--color-ct);
 }
 
 .teambox.T .player .hp_bar {
     background-color: var(--color-new-t);
+    box-shadow: 0 0 3px 0 var(--color-t);
+    text-shadow: 0 0 3px var(--color-t);
 }
 
 .teambox .player .hp_bar.low {

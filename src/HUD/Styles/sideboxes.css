@@ -87,7 +87,6 @@
 .utilitybox {
     flex-direction: column;
     margin-bottom: 4px;
-    /* border-radius: 20px 20px 0 0; */
 }
 
 .utilitybox .title_container {
@@ -164,7 +163,7 @@
     height: 25px;
     display: flex;
     align-items: flex-end;
-    font-size: 16px;
+    font-size: 14px;
     justify-content: center;
 }
 

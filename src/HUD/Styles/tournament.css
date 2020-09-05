@@ -2,11 +2,12 @@
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.85);
+    background-color: var(--color-ct);
     top: 200px;
     opacity: 0;
     transition: opacity 1s;
     color: white;
+    z-index: 99999999;
 }
 .ladder-container.show {
     opacity:1;
