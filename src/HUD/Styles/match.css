@@ -8,9 +8,11 @@
     transition: opacity 0.5s;
     flex-direction: column;
     font-size: 13px;
+    display: none;
 }
 .map_series_container.show {
     opacity:1;
+    display: none;
 }
 .map_series_container .veto_container {
     display: flex;
