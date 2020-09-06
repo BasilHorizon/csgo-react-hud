@@ -50,8 +50,12 @@
     flex: 1;
     display: flex;
     align-items: center;
-    font-weight:600;
+    font-weight: 400;
     font-size:18px;     
+}
+
+.sidebox .title_container>.subtitle {
+    font-weight: 300;
 }
 
 .sidebox.right {
@@ -79,8 +83,9 @@
 
 
 .sidebox .image_container img {
-    max-width: 70px;
-    max-height: 70px;
+    width: auto;
+    height: 42px;
+
 }
 
 
@@ -94,7 +99,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: 300;
     font-size:16px;
     height: 24px;
 }

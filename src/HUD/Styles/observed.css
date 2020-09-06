@@ -184,8 +184,9 @@
 }
 
 .observed .stats_row .health_armor_container .icon img {
-    max-height:30px;
-    max-width:22px;
+    max-height: 22px;
+    margin-left: 30px;
+    margin-right: 22px;
 }
 
 .observed .stats_row .health_armor_container .text {

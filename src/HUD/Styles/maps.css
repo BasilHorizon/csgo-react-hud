@@ -41,3 +41,6 @@
     text-shadow: 0 0 15px white;
     font-weight: 600;
 }
+#maps_container {
+    display: none;
+}

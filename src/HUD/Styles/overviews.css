@@ -73,10 +73,10 @@ img.flag {
     display: flex;
     flex-direction: column;
     right: 10px;
-    top: 375px;
-    background-color: #000000a8;
+    top: 226px;
+    background-color: var(--sub-panel-color);
     text-transform: uppercase;
-    width: 250px;
+    width: 400px;
     color:white;
 }
 .match-overview.show {
@@ -87,8 +87,8 @@ img.flag {
 }
 .match-overview-title {
     text-align:center;
-    font-weight:600;
-    background-color: rgba(0,0,0,0.5);
+    font-weight:300;
+    font-size: 18px;
     padding:3px 0;
 }
 .match-overview-teams > div {
@@ -102,9 +102,7 @@ img.flag {
 .match-overview-vs {
     width: 20px;
     flex: unset;
-    background-color: rgba(0,0,0,0.6);
     font-size: 30px;    
 }
 .match-overview-teams > div:not(.match-overview-vs) {
-    background-color: rgba(0,0,0,0.7);
 }
