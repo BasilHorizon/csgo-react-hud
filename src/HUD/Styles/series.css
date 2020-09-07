@@ -51,10 +51,10 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: var(--white-full);
-    top: 16px;
+    top: 12px;
 }
 
 .container {

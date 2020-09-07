@@ -254,10 +254,10 @@
 	animation-fill-mode: forwards;
 }
 .win_text.right {
-    left: 440px;
+    right: 440px;
 }
 .win_text.left {
-    right: 440px;
+    left: 440px;
 }
 
 
@@ -275,10 +275,10 @@
     background-color: rgba(0,0,0,0.65);
 }
 .defuse_plant_container.right {
-    left: 440px;
+    right: 440px;
 }
 .defuse_plant_container.left {
-    right: 440px;
+    left: 440px;
 }
 .defuse_plant_container.hide {
     opacity: 0;

@@ -92,7 +92,7 @@ export default class SideBox extends React.Component<Props> {
         const grenades = summarise(this.props.players, this.props.side);
         const total = Object.values(grenades).reduce((a, b) => a+b, 0);
         return (
-            <div className={`utilitybox ${this.props.side || ''} ${this.props.show ? "show" : "hide"}`}>
+            <div className={`utilitybox ${this.props.side || ''} ${this.props.show ? "show" : "show"}`}>
                 <div className="title_container">
                     <div className="title">Utility Level -&nbsp;</div>
                     <div className="subtitle" style={{color: utilityColor(total)}}>{utilityState(total)}</div>
