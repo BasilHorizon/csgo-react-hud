@@ -325,9 +325,11 @@
 
 .teambox .player .hp_bar {
     height: 18px;
+    transition: .3s ease-in-out;
 }
-.teambox.right .player .hp_bar {
-    align-self: flex-end;
+.teambox .player .hp_bar {
+    height: 18px;
+    transition: .3s ease-in-out;
 }
 
 .teambox .player .row .hp_background,

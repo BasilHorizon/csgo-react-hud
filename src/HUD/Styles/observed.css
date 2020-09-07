@@ -159,6 +159,7 @@
 }
 
 .observed .avatar {
+    display: none;
     align-self: flex-end;
     display: block;
     position: absolute;
@@ -168,6 +169,7 @@
 }
 .observed .avatar img {
     /* border-radius:50%; */
+    display: none;
 }
 .observed .stats_row .health_armor_container {
     display: flex;
