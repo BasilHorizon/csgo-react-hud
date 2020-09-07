@@ -58,7 +58,7 @@ html, body, .map-container {
     /*transition: all 0.1s ease;/**/
 }
 .map .player.active {
-    z-index: 2;
+    z-index: 3;
 }
 .map .player .background {
     /*background-color:white;*/
@@ -186,7 +186,8 @@ html, body, .map-container {
     border-radius: 50%;
 }
 .map .player.T.hasBomb .label {
-    /*background: radial-gradient( red, red);*/
+    background: #ba0000;
+    z-index: 2;
 }
 
 .map .hidden {
