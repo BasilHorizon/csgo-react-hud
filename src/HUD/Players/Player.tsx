@@ -52,7 +52,7 @@ export default class PlayerBox extends React.Component<IProps> {
             <div className="row">
               <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}>
                 <div className="health">
-                  {player.state.health}%
+                  {player.state.health}
                 </div>
               </div>
             </div>
