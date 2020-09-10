@@ -84,6 +84,8 @@ img.flag {
 }
 .match-overview-teams {
     display: flex;
+    width: calc(100% - 12px);
+    margin: 0 6px;
 }
 .match-overview-title {
     text-align:center;
@@ -105,4 +107,7 @@ img.flag {
     font-size: 30px;    
 }
 .match-overview-teams > div:not(.match-overview-vs) {
+}
+.match-overview-team-name {
+    text-align: center;
 }
